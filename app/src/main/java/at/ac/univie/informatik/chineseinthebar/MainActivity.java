@@ -20,21 +20,30 @@ public class MainActivity extends AppCompatActivity {
 
     public void eatOnClick(View view) {
         Intent i = new Intent(this, ChooseActivity.class);
+        String sender = "eat";
+        i.putExtra("sender", sender);
+
         startActivity(i);
     }
 
     public void talkOnClick(View view) {
         Intent i = new Intent(this, ChooseActivity.class);
+        String sender = "talk";
+        i.putExtra("sender", sender);
         startActivity(i);
     }
 
     public void drinkOnClick(View view) {
         Intent i = new Intent(this, ChooseActivity.class);
+        String sender = "drink";
+        i.putExtra("sender", sender);
         startActivity(i);
     }
 
     public void danceOnClick(View view) {
         Intent i = new Intent(this, ChooseActivity.class);
+        String sender = "dance";
+        i.putExtra("sender", sender);
         startActivity(i);
     }
 

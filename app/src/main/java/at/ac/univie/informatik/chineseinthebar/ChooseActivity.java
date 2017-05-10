@@ -15,6 +15,11 @@ public class ChooseActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_choose);
 
+        Bundle mainData = getIntent().getExtras();
+        if (mainData == null)
+            return;
+        String mainChoice = mainData.getString("mainMessage");
+
         String[] array = {"Item1", "Item2", "Item3"};
         ListAdapter chooseAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, array);
         ListView chooseListView = (ListView) findViewById(R.id.chooseListView);
@@ -28,5 +33,7 @@ public class ChooseActivity extends AppCompatActivity {
                     }
                 }
         );
+
+
     }
 }
