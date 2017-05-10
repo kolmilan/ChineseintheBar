@@ -14,7 +14,7 @@
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:drawableLeft="@drawable/ic_restaurant_menu_black_24dp"
-            android:text="Eat"
+            android:text="@string/eat_button_text"
             app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
@@ -25,7 +25,8 @@
             app:layout_constraintBottom_toTopOf="@+id/talk"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="0.032" />
+            app:layout_constraintHorizontal_bias="0.032"
+            android:onClick="eatOnClick"/>
 
         <Button
             android:id="@+id/talk"
@@ -34,13 +35,14 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/drink"
             android:drawableLeft="@drawable/ic_account_multiple"
-            android:text="Talk"
+            android:text="@string/talk_button_text"
             android:layout_marginLeft="50dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/dance"
             app:layout_constraintTop_toBottomOf="@+id/eat"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginStart="8dp" />
+            android:layout_marginStart="8dp"
+            android:onClick="talkOnClick"/>
 
         <Button
             android:id="@+id/drink"
@@ -50,7 +52,7 @@
             android:layout_marginStart="8dp"
             android:layout_toEndOf="@+id/eat"
             android:drawableLeft="@drawable/ic_local_bar_black_24dp"
-            android:text="Drink"
+            android:text="@string/drink_button_text"
             app:layout_constraintLeft_toRightOf="@+id/eat"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
@@ -60,7 +62,8 @@
             app:layout_constraintBottom_toTopOf="@+id/dance"
             android:layout_marginBottom="8dp"
             android:layout_marginEnd="8dp"
-            app:layout_constraintHorizontal_bias="0.898" />
+            app:layout_constraintHorizontal_bias="0.898"
+            android:onClick="drinkOnClick"/>
 
         <Button
             android:id="@+id/dance"
@@ -70,14 +73,15 @@
             android:layout_marginStart="61dp"
             android:layout_toEndOf="@+id/drink"
             android:drawableLeft="@drawable/ic_party_icon"
-            android:text="Dance"
+            android:text="@string/dance_button_text"
             app:layout_constraintLeft_toRightOf="@+id/talk"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/drink"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginEnd="8dp" />
+            android:layout_marginEnd="8dp"
+            android:onClick="danceOnClick"/>
 
     </android.support.constraint.ConstraintLayout>
 
