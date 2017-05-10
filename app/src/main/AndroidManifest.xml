@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ChooseActivity" />
+        <activity android:name=".ChoosePhraseActivity" />
+        <activity android:name=".ShowPhraseActivity"></activity>
     </application>
 
 </manifest>
