@@ -47,5 +47,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void gameOnClick(View view) {
+        Intent i = new Intent(this, GameActivity.class);
+        startActivity(i);
+    }
+
 
 }
