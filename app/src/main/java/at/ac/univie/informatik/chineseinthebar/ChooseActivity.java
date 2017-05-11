@@ -48,7 +48,7 @@ public class ChooseActivity extends AppCompatActivity {
         else {
             return;
         } */
-        ListAdapter chooseAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, array);
+        ListAdapter chooseAdapter = new ChooseAdapter(this, array);
 
         ListView chooseListView = (ListView) findViewById(R.id.chooseListView);
         chooseListView.setAdapter(chooseAdapter);
