@@ -81,13 +81,13 @@ public class Main2Activity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_phrases) {
+            Intent i = new Intent(this, Main2Activity.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_game) {
+            Intent i = new Intent(this, GameActivity.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_share) {
 

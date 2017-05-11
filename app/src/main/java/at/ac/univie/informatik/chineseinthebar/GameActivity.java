@@ -1,9 +1,12 @@
 package at.ac.univie.informatik.chineseinthebar;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
 
 public class GameActivity extends AppCompatActivity {
 
