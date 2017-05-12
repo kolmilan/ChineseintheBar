@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import java.util.concurrent.TimeUnit;
 
 public class GameActivity extends AppCompatActivity {
 
@@ -32,7 +33,11 @@ public class GameActivity extends AppCompatActivity {
         AlertDialog instructions = instBuilder.create();
         instructions.setTitle("Instructions");
         instructions.show();
+
+        
     }
+
+
 
     // creates instruction dialog on startup
     /* public void checkFirstRun() {
