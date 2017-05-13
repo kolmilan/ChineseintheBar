@@ -4,10 +4,13 @@
     <string name="talk_button_text">Talk</string>
     <string name="drink_button_text">Drink</string>
     <string name="dance_button_text">Dance</string>
-    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_menu">Chinese in the Bar</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <string name="title_category">Select category</string>
+
 </resources>

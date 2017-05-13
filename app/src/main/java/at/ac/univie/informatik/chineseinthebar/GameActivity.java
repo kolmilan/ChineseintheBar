@@ -1,14 +1,11 @@
 package at.ac.univie.informatik.chineseinthebar;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
+
 import java.util.concurrent.TimeUnit;
 
 public class GameActivity extends AppCompatActivity {
@@ -62,7 +59,7 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, Main2Activity.class);
+                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
                 startActivity(intent);
             }
         });
@@ -111,7 +108,7 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, Main2Activity.class);
+                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
                 startActivity(intent);
             }
         });
@@ -160,7 +157,7 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, Main2Activity.class);
+                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
                 startActivity(intent);
             }
         });
@@ -180,7 +177,7 @@ public class GameActivity extends AppCompatActivity {
         failBuilder.setNegativeButton("Quit game", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, Main2Activity.class);
+                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
                 startActivity(intent);
             }
         });
