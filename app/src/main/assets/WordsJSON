@@ -1,0 +1,65 @@
+[
+  {
+    "english": "coffee",
+    "transChinese": "我會喝咖啡",
+    "transPinyin": "kāfēi",
+    "category": "drink",
+    "image": "coffee"
+  },
+  {
+    "english": "tee",
+    "transChinese": "我會喝茶",
+    "transPinyin": "chá",
+    "category": "drink",
+    "image": "tee"
+  },
+  {
+    "english": "wine",
+    "transChinese": "红酒",
+    "transPinyin": "Hóngjiǔ",
+    "category": "drink",
+    "image": "wine"
+  },
+  {
+    "english": "beer",
+    "transChinese": "啤酒",
+    "transPinyin": "Píjiǔ",
+    "category": "drink",
+    "image": "beer"
+  },
+  {
+    "english": "cacao",
+    "transChinese": "可可",
+    "transPinyin": "Kěkě",
+    "category": "drink",
+    "image": "cacao"
+  },
+  {
+    "english": "vodka",
+    "transChinese": "伏特加",
+    "transPinyin": "Fútèjiā",
+    "category": "drink",
+    "image": "vodka"
+  },
+  {
+    "english": "meat",
+    "transChinese": "肉",
+    "transPinyin": "Ròu",
+    "category": "eat",
+    "image": "meat"
+  },
+  {
+    "english": "Salad",
+    "transChinese": "沙拉",
+    "transPinyin": "Shālā",
+    "category": "eat",
+    "image": "salad"
+  },
+  {
+    "english": "Fruit salad",
+    "transChinese": "水果沙拉",
+    "transPinyin": "Shuǐguǒ shālā",
+    "category": "eat",
+    "image": "fruitsalad"
+  }
+]

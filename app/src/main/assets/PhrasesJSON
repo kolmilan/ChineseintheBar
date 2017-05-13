@@ -1,0 +1,93 @@
+[
+  {
+    "english": "Could you make an expresso",
+    "transChinese": "我會喝咖啡",
+    "transPinyin": "Wǒ huì hē kāfēi",
+    "category": "drink",
+    "image": "espresso"
+  },
+  {
+    "english": "Time to drink wine und dance on the table",
+    "transChinese": "时间喝酒，在桌子上跳舞",
+    "transPinyin": "Shíjiān hējiǔ, zài zhuōzi shàng tiàowǔ",
+    "category": "drink",
+    "image": "drink_wine_dance_table"
+  },
+  {
+    "english": "The best wines are the ones we drink with friends",
+    "transChinese": "最好的葡萄酒是我们和朋友一起喝的葡萄酒",
+    "transPinyin": "Zuì hǎo de pútáojiǔ shì wǒmen hé péngyǒu yīqǐ hē de pútáojiǔ",
+    "category": "drink",
+    "image": "best_wines_best_friends"
+  },
+  {
+    "english": "Drink because you are happy and not because you are miserable",
+    "transChinese": "喝酒，因为你很开心，而不是因为你很痛苦",
+    "transPinyin": "Hējiǔ, yīnwèi nǐ hěn kāixīn, ér bùshì yīnwèi nǐ hěn tòngkǔ",
+    "category": "drink",
+    "image": "drink_happy"
+  },
+  {
+    "english": "Life is too short to drink bad wine",
+    "transChinese": "生活太短，不喝酒",
+    "transPinyin": "Shēnghuó tài duǎn, bù hējiǔ",
+    "category": "drink",
+    "image": "life_too_short"
+  },
+  {
+    "english": "To relieve stress I do Yoga. Just kidding, i drink wine in my yoga pants.",
+    "transChinese": "为了减轻压力，我做瑜伽。 只是开玩笑，我在我的瑜伽裤中喝酒。",
+    "transPinyin": "Wèile jiǎnqīng yālì, wǒ zuò yújiā. Zhǐshì kāiwánxiào, wǒ zài wǒ de yújiā kù zhōng hējiǔ.",
+    "category": "drink",
+    "image": "yoga_drink"
+  },
+  {
+    "english": "Wine may not solve your problems. But neither will water or milk",
+    "transChinese": "葡萄酒可能无法解决您的问题。 但也不会有水或牛奶",
+    "transPinyin": "Pútáojiǔ kěnéng wúfǎ jiějué nín de wèntí. Dàn yě bù huì yǒu shuǐ huò niúnǎi",
+    "category": "drink",
+    "image": "alcohol_milk"
+  },
+  {
+    "english": "Never trust anyone who doesn't drink coffee",
+    "transChinese": "不要相信任何不喝咖啡的人",
+    "transPinyin": "Bùyào xiāngxìn rènhé bù hē kāfēi de rén",
+    "category": "drink",
+    "image": "never_trust_coffee"
+  },
+  {
+    "english": "Life is too short to say no cake",
+    "transChinese": "生活太短，不能说蛋糕",
+    "transPinyin": "Shēnghuó tài duǎn, bùnéng shuō dàngāo",
+    "category": "eat",
+    "image": "life_cake"
+  },
+  {
+    "english": "You are what you eat",
+    "transChinese": "吃啥变啥",
+    "transPinyin": "Chī shà biàn shà",
+    "category": "eat",
+    "image": "you_are_you_eat"
+  },
+  {
+    "english": "You are what you eat, so don't be fast, cheap, easy or fake",
+    "transChinese": "你是你吃的，所以不要快，便宜，容易或假",
+    "transPinyin": "Nǐ shì nǐ chī de, suǒyǐ bùyào kuài, piányí, róngyì huò jiǎ",
+    "category": "eat",
+    "image": "be_fast"
+  },
+  {
+    "english": "My head says go to the gym, my heart says eat more ice cream",
+    "transChinese": "我的头说，去健身房，我的心说，吃更多的冰淇淋",
+    "transPinyin": "Wǒ de tóu shuō, qù jiànshēnfáng, wǒ de xīn shuō, chī gèng duō de bīngqílín",
+    "category": "eat",
+    "image": "ice_cream"
+  },
+  {
+    "english": "It's not a shot term diat. It's a long term lifestyle change",
+    "transChinese": "这不是一个短期的饮食。 这是一个长期的生活方式的改变",
+    "transPinyin": "Zhè bùshì yīgè duǎnqí de yǐnshí. Zhè shì yīgè chángqí de shēnghuó fāngshì de gǎibiàn",
+    "category": "eat",
+    "image": "short_term_diet"
+  }
+]
