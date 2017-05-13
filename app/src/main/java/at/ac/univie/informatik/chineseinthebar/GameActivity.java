@@ -52,8 +52,8 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, GameActivity.class);
-                startActivity(intent);
+                dialogInterface.cancel();
+                firstTry();
             }
         });
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
@@ -80,15 +80,15 @@ public class GameActivity extends AppCompatActivity {
         fail.setTitle("Failure!");
 
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         boolean correct = correct();
-        if (correct == true) {
+        if (correct) {
             success.show();
         }
-        if (correct == false) {
+        if (!correct) {
             fail.show();
         }
 
@@ -101,8 +101,8 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, GameActivity.class);
-                startActivity(intent);
+                dialogInterface.cancel();
+                firstTry();
             }
         });
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
@@ -129,15 +129,15 @@ public class GameActivity extends AppCompatActivity {
         fail.setTitle("Failure!");
 
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         boolean correct = correct();
-        if (correct == true) {
+        if (correct) {
             success.show();
         }
-        if (correct == false) {
+        if (!correct) {
             fail.show();
         }
 
@@ -150,8 +150,8 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, GameActivity.class);
-                startActivity(intent);
+                dialogInterface.cancel();
+                firstTry();
             }
         });
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
@@ -170,8 +170,8 @@ public class GameActivity extends AppCompatActivity {
         failBuilder.setPositiveButton("Get a new word", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, GameActivity.class);
-                startActivity(intent);
+                dialogInterface.cancel();
+                firstTry();
             }
         });
         failBuilder.setNegativeButton("Quit game", new DialogInterface.OnClickListener() {
@@ -185,15 +185,15 @@ public class GameActivity extends AppCompatActivity {
         fail.setTitle("Failure!");
 
         try {
-            TimeUnit.SECONDS.sleep(5);
+            TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         boolean correct = correct();
-        if (correct == true) {
+        if (correct) {
             success.show();
         }
-        if (correct == false) {
+        if (!correct) {
             fail.show();
         }
 
@@ -202,7 +202,7 @@ public class GameActivity extends AppCompatActivity {
     public boolean correct() {
         boolean correct = false;
         double random = Math.random();
-        if (random < 0.35) {
+        if (random < 0.191) {
             correct = true;
         }
         return correct;
