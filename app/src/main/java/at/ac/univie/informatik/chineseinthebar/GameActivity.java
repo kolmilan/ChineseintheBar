@@ -5,17 +5,36 @@ import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
+import java.util.List;
+import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 public class GameActivity extends AppCompatActivity {
 
-
+    private Translation word;
+    private Random randomGenerator;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game);
+        randomGenerator = new Random();
+
+        generateWord();
+
+        TextView english;
+        english = (TextView)findViewById(R.id.english);
+        english.setText(word.getEnglish());
+
+        TextView chinese;
+        english = (TextView)findViewById(R.id.chinese);
+        english.setText(word.getChinese());
+
+        TextView pinyin;
+        english = (TextView)findViewById(R.id.pinyin);
+        english.setText(word.getPinyin());
 
         AlertDialog.Builder instBuilder = new AlertDialog.Builder(GameActivity.this);
         instBuilder.setMessage("Try pronouncing the phrase on the screen.\n" +
@@ -52,14 +71,14 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-                firstTry();
+                Intent intent = new Intent(GameActivity.this, GameActivity.class);
+                startActivity(intent);
             }
         });
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
+                Intent intent = new Intent(GameActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -101,14 +120,14 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-                firstTry();
+                Intent intent = new Intent(GameActivity.this, GameActivity.class);
+                startActivity(intent);
             }
         });
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
+                Intent intent = new Intent(GameActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -150,14 +169,14 @@ public class GameActivity extends AppCompatActivity {
         successBuilder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-                firstTry();
+                Intent intent = new Intent(GameActivity.this, GameActivity.class);
+                startActivity(intent);
             }
         });
         successBuilder.setNegativeButton("No thanks", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
+                Intent intent = new Intent(GameActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -170,14 +189,14 @@ public class GameActivity extends AppCompatActivity {
         failBuilder.setPositiveButton("Get a new word", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                dialogInterface.cancel();
-                firstTry();
+                Intent intent = new Intent(GameActivity.this, GameActivity.class);
+                startActivity(intent);
             }
         });
         failBuilder.setNegativeButton("Quit game", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Intent intent = new Intent(GameActivity.this, CategoryActivity.class);
+                Intent intent = new Intent(GameActivity.this, MenuActivity.class);
                 startActivity(intent);
             }
         });
@@ -206,6 +225,20 @@ public class GameActivity extends AppCompatActivity {
             correct = true;
         }
         return correct;
+    }
+
+    private void generateWord() {
+        String category;
+        double random = Math.random();
+        if (random < 0.5)
+            category = "eat";
+        else
+            category = "drink";
+        List<Translation> translations = Settings.getTranslation(this, "WordsJSON", category);
+
+        int index = randomGenerator.nextInt(translations.size());
+        word = translations.get(index);
+
     }
 
     // creates instruction dialog on startup
