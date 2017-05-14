@@ -62,4 +62,18 @@
     "category": "eat",
     "image": "fruitsalad"
   }
+  {
+    "english": "dance",
+    "transChinese": "舞蹈",
+    "transPinyin": "Wǔdǎo",
+    "category": "dance",
+    "image": "fruitsalad"
+  }
+  {
+    "english": "conversation",
+    "transChinese": "会话",
+    "transPinyin": "Huìhuà",
+    "category": "talk",
+    "image": "fruitsalad"
+  }
 ]

@@ -90,4 +90,20 @@
     "category": "eat",
     "image": "short_term_diet"
   }
+
+  {
+    "english": "Hello, my name is…",
+    "transChinese": "你好我的名字是…",
+    "transPinyin": "Nǐ hǎo, wǒ de míngzì shì…",
+    "category": "talk",
+    "image": "short_term_diet"
+  }
+  {
+    "english": "Can I ask you for a dance?",
+    "transChinese": "我可以请你跳舞吗？",
+    "transPinyin": "Wǒ kěyǐ qǐng nǐ tiàowǔ ma?",
+    "category": "dance",
+    "image": "short_term_diet"
+  }
+
 ]
