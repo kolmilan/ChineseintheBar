@@ -1,84 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
     tools:context="at.ac.univie.informatik.chineseinthebar.CategoryActivity"
     tools:showIn="@layout/activity_category">
 
-    <Button
-        android:id="@+id/eat"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:drawableStart="@drawable/ic_restaurant_menu_black_24dp"
-        android:text="@string/eat_button_text"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/talk"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintHorizontal_bias="0.032"
-        android:onClick="eatOnClick"/>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="horizontal">
 
     <Button
-        android:id="@+id/talk"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/drink"
-        android:drawableStart="@drawable/ic_account_multiple"
-        android:text="@string/talk_button_text"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@+id/dance"
-        app:layout_constraintTop_toBottomOf="@+id/eat"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginStart="8dp"
-        android:onClick="talkOnClick"/>
+        android:id="@+id/eat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/ic_restaurant_menu_black_24dp"
+        android:onClick="eatOnClick"
+        android:textSize="30sp"
+        android:background="#e6b3ff"
+        android:text="EAT" />
 
     <Button
         android:id="@+id/drink"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/eat"
-        android:layout_marginStart="8dp"
-        android:layout_toEndOf="@+id/eat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ccffff"
+        android:textSize="30sp"
         android:drawableStart="@drawable/ic_local_bar_black_24dp"
-        android:text="@string/drink_button_text"
-        app:layout_constraintLeft_toRightOf="@+id/eat"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/dance"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintHorizontal_bias="0.898"
-        android:onClick="drinkOnClick"/>
+        android:onClick="drinkOnClick"
+        android:text="DRINK" />
 
-    <Button
-        android:id="@+id/dance"
-        android:layout_width="150dp"
-        android:layout_height="60dp"
-        android:layout_below="@+id/drink"
-        android:layout_marginStart="61dp"
-        android:layout_toEndOf="@+id/drink"
-        android:drawableStart="@drawable/ic_party_icon"
-        android:text="@string/dance_button_text"
-        app:layout_constraintLeft_toRightOf="@+id/talk"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/drink"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginEnd="8dp"
-        android:onClick="danceOnClick"/>
+</LinearLayout>
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/talk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#b3ffcc"
+            android:textSize="30sp"
+            android:drawableStart="@drawable/ic_account_multiple"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:onClick="talkOnClick"
+            android:text="TALK" />
+
+        <Button
+            android:id="@+id/dance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/ic_party_icon"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:background="#ffffb3"
+            android:onClick="danceOnClick"
+            android:textSize="30sp"
+            android:text="DANCE" />
+
+    </LinearLayout>
+</LinearLayout>

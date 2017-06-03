@@ -89,21 +89,19 @@
     "transPinyin": "Zhè bùshì yīgè duǎnqí de yǐnshí. Zhè shì yīgè chángqí de shēnghuó fāngshì de gǎibiàn",
     "category": "eat",
     "image": "short_term_diet"
-  }
-
+  },
   {
     "english": "Hello, my name is…",
     "transChinese": "你好我的名字是…",
     "transPinyin": "Nǐ hǎo, wǒ de míngzì shì…",
     "category": "talk",
-    "image": "short_term_diet"
-  }
+    "image": "my_name"
+  },
   {
-    "english": "Can I ask you for a dance?",
+    "english": "Dance is like dreaming with your feet",
     "transChinese": "我可以请你跳舞吗？",
     "transPinyin": "Wǒ kěyǐ qǐng nǐ tiàowǔ ma?",
     "category": "dance",
-    "image": "short_term_diet"
+    "image": "dance_as_dreaming"
   }
-
 ]

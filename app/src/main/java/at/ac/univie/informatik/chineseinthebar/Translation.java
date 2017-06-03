@@ -23,19 +23,15 @@ public class Translation {
     public String getEnglish() {
         return english;
     }
-
     public String getChinese() {
         return chinese;
     }
-
     public String getPinyin() {
         return pinyin;
     }
-
     public String getImage() {
         return image;
     }
-
     public String getCategory() {
         return category;
     }
