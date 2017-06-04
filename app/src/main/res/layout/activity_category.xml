@@ -18,10 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:drawableStart="@drawable/ic_restaurant_menu_black_24dp"
         android:onClick="eatOnClick"
         android:textSize="30sp"
-        android:background="#e6b3ff"
+        android:background="@drawable/papyrus5"
         android:text="EAT" />
 
     <Button
@@ -29,9 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#ccffff"
+        android:background="@drawable/papyrus6"
         android:textSize="30sp"
-        android:drawableStart="@drawable/ic_local_bar_black_24dp"
         android:onClick="drinkOnClick"
         android:text="DRINK" />
 
@@ -49,9 +47,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#b3ffcc"
+            android:background="@drawable/papyrus6"
             android:textSize="30sp"
-            android:drawableStart="@drawable/ic_account_multiple"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:onClick="talkOnClick"
             android:text="TALK" />
@@ -61,9 +58,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:drawableStart="@drawable/ic_party_icon"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:background="#ffffb3"
+            android:background="@drawable/papyrus5"
             android:onClick="danceOnClick"
             android:textSize="30sp"
             android:text="DANCE" />
