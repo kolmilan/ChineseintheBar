@@ -1,4 +1,4 @@
-## Readme - M3
+## Readme - M4
 
 * Gruppe:	Dienstag
 * Team-Nr.: 6
@@ -17,7 +17,9 @@ Externe Libraries und Frameworks:
 keine
 
 Dauer der Entwicklung:
-50 Stunden
+M3: 50 Stunden
+M4: 5 Stunden
 
 Weitere Anmerkungen:
 Github: https://github.com/kolmilan/ChineseintheBar/
+Die App sollte mit MenuActivity gestartet werden.
